@@ -44,12 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bot.cs" />
-    <Compile Include="Factories\MagazineFactory.cs" />
     <Compile Include="Health.cs" />
-    <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IDamagable.cs" />
-    <Compile Include="Interfaces\IMagazine.cs" />
-    <Compile Include="MeleeWeapon.cs" />
+    <Compile Include="Interfaces\Magazine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategies\Gun\IGunShootingStrategy.cs" />
