@@ -1,13 +1,12 @@
 ﻿using System;
-using TheGun.Interfaces;
 
 namespace TheGun
 {
     public class Bot
     {
-        private readonly IAttacker _weapon;
+        private readonly RangedWeapon _weapon;
 
-        public Bot(IAttacker weapon) =>
+        public Bot(RangedWeapon weapon) =>
             _weapon = weapon ?? throw new ArgumentNullException(nameof(weapon));
 
         public void OnSeePlayer(Health player)
@@ -15,7 +14,7 @@ namespace TheGun
             if (player.IsDied)
                 return;
 
-            _weapon.Attack(player);
+            _weapon.Shoot(player);
         }
     }
 }

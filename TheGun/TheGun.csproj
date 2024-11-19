@@ -48,12 +48,15 @@
     <Compile Include="Health.cs" />
     <Compile Include="Interfaces\IAttacker.cs" />
     <Compile Include="Interfaces\IDamagable.cs" />
-    <Compile Include="Magazine .cs" />
+    <Compile Include="Interfaces\IMagazine.cs" />
     <Compile Include="MeleeWeapon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies\Gun\IGunShootingStrategy.cs" />
+    <Compile Include="Strategies\Gun\RevolverShootingStrategy.cs" />
     <Compile Include="Structers\Bullet.cs" />
-    <Compile Include="IRangedWeapon.cs" />
+    <Compile Include="Structers\Cartridge.cs" />
+    <Compile Include="RangedWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

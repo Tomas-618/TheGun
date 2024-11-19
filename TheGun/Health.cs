@@ -15,20 +15,14 @@ namespace TheGun
             _value = value;
         }
 
-        public bool IsDied { get; private set; }
+        public bool IsDied => _value <= 0;
 
         public void TakeDamage(int damage)
         {
             if (damage < 0)
                 throw new ArgumentOutOfRangeException(damage.ToString());
 
-            _value -= damage;
-
-            if (_value > 0)
-                return;
-
-            _value = 0;
-            IsDied = true;
+            _value = Math.Max(0, _value - damage);
         }
     }
 }
